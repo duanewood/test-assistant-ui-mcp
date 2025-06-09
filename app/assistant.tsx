@@ -25,13 +25,13 @@ export const Assistant = () => {
               <BreadcrumbList>
                 <BreadcrumbItem className="hidden md:block">
                   <BreadcrumbLink href="#">
-                    Build Your Own ChatGPT UX
+                    DWChat
                   </BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator className="hidden md:block" />
                 <BreadcrumbItem>
                   <BreadcrumbPage>
-                    Starter Template
+                    Exploring Assistant UI and MCP
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
