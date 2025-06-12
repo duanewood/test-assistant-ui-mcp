@@ -1,25 +1,27 @@
-This is the [assistant-ui](https://github.com/Yonom/assistant-ui) starter project.
+
+# Example AI Chat
+
+This is a demo AI chat app that uses tools from configured MCP servers
 
 ## Getting Started
 
-First, add your OpenAI API key to `.env.local` file:
+2. Copy `.env.example` to `.env.local`
+3. In `.env`, fill in the keys for GROQ_API_KEY. See https://groq.com/ to get a key
 
-```
-OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-```
+  ```sh
+    GROQ_API_KEY=your-api-key
+  ```
 
 Then, run the development server:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
+
+Then, configure the available MCP servers:
+
+The MCP Servers are configured in [./app/lib/init.ts](./app/lib/init.ts). Update this based on the available MCP servers.
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
